@@ -24,6 +24,12 @@ d3.json('data.json', (dataset) => {
 
     let xPos = i * 375 + 200;
     let g = svg.append("g").attr("transform", `translate(${i < 4 ? xPos : (i-3) * 375}, ${i < 4 ? 225 : 600})`);
+
+    g.append("text").text(dayData.day.substring(0, 3))
+      .attr("text-anchor", "middle")
+      .attr("alignment-baseline", "middle")
+      .attr("font-family", "sans-serif");
+
     let gr = g.append("g")
         .attr("class", "r axis")
         .append("circle")
@@ -69,10 +75,6 @@ d3.json('data.json', (dataset) => {
         .attr("transform", d => (d.a < 270 && d.a > 90 ? "rotate(180 " + x2 + ", 0)" : null) )
         .text( d => d.h );
 
-    g.append("text").text(dayData.day.substring(0, 3))
-      .attr("text-anchor", "middle")
-      .attr("alignment-baseline", "middle")
-      .attr("font-family", "sans-serif");
 
   })
 
