@@ -5,189 +5,216 @@
          {
             "time":{
                "hrs":12,
-               "min":37
+               "min":37,
+               "decimal":12.616666666666667
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":12,
-               "min":54
+               "min":54,
+               "decimal":12.9
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":13,
-               "min":1
+               "min":1,
+               "decimal":13.016666666666667
             },
             "app":"Maps"
          },
          {
             "time":{
                "hrs":13,
-               "min":6
+               "min":6,
+               "decimal":13.1
             },
             "app":"PokemonGo"
          },
          {
             "time":{
                "hrs":13,
-               "min":12
+               "min":12,
+               "decimal":13.2
             },
             "app":"PokemonGo"
          },
          {
             "time":{
                "hrs":13,
-               "min":14
+               "min":14,
+               "decimal":13.233333333333333
             },
             "app":"PokemonGo"
          },
          {
             "time":{
                "hrs":13,
-               "min":19
+               "min":19,
+               "decimal":13.316666666666666
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":13,
-               "min":58
+               "min":58,
+               "decimal":13.966666666666667
             },
             "app":"9Gag"
          },
          {
             "time":{
                "hrs":14,
-               "min":52
+               "min":52,
+               "decimal":14.866666666666667
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":16,
-               "min":46
+               "min":46,
+               "decimal":16.766666666666666
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":17,
-               "min":1
+               "min":1,
+               "decimal":17.016666666666666
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":19,
-               "min":5
+               "min":5,
+               "decimal":19.083333333333332
             },
             "app":"Transit"
          },
          {
             "time":{
                "hrs":19,
-               "min":17
+               "min":17,
+               "decimal":19.283333333333335
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":19,
-               "min":19
+               "min":19,
+               "decimal":19.316666666666666
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":19,
-               "min":24
+               "min":24,
+               "decimal":19.4
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":19,
-               "min":36
+               "min":36,
+               "decimal":19.6
             },
             "app":"Transit"
          },
          {
             "time":{
                "hrs":19,
-               "min":42
+               "min":42,
+               "decimal":19.7
             },
             "app":"Maps"
          },
          {
             "time":{
                "hrs":19,
-               "min":45
+               "min":45,
+               "decimal":19.75
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":19,
-               "min":52
+               "min":52,
+               "decimal":19.866666666666667
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":19,
-               "min":58
+               "min":58,
+               "decimal":19.966666666666665
             },
             "app":"Maps"
          },
          {
             "time":{
                "hrs":21,
-               "min":3
+               "min":3,
+               "decimal":21.05
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":21,
-               "min":35
+               "min":35,
+               "decimal":21.583333333333332
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":22,
-               "min":15
+               "min":15,
+               "decimal":22.25
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":22,
-               "min":18
+               "min":18,
+               "decimal":22.3
             },
             "app":"Maps"
          },
          {
             "time":{
                "hrs":22,
-               "min":22
+               "min":22,
+               "decimal":22.366666666666667
             },
             "app":"Maps"
          },
          {
             "time":{
                "hrs":22,
-               "min":34
+               "min":34,
+               "decimal":22.566666666666666
             },
             "app":"Maps"
          },
          {
             "time":{
                "hrs":23,
-               "min":35
+               "min":35,
+               "decimal":23.583333333333332
             },
             "app":"Whatsapp"
          }
@@ -199,175 +226,200 @@
          {
             "time":{
                "hrs":0,
-               "min":12
+               "min":12,
+               "decimal":0.2
             },
             "app":"9Gag"
          },
          {
             "time":{
                "hrs":12,
-               "min":13
+               "min":13,
+               "decimal":12.216666666666667
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":12,
-               "min":17
+               "min":17,
+               "decimal":12.283333333333333
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":12,
-               "min":24
+               "min":24,
+               "decimal":12.4
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":12,
-               "min":26
+               "min":26,
+               "decimal":12.433333333333334
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":12,
-               "min":28
+               "min":28,
+               "decimal":12.466666666666667
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":12,
-               "min":29
+               "min":29,
+               "decimal":12.483333333333333
             },
             "app":"PokemonGo"
          },
          {
             "time":{
                "hrs":13,
-               "min":49
+               "min":49,
+               "decimal":13.816666666666666
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":13,
-               "min":54
+               "min":54,
+               "decimal":13.9
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":13,
-               "min":55
+               "min":55,
+               "decimal":13.916666666666666
             },
             "app":"9Gag"
          },
          {
             "time":{
                "hrs":14,
-               "min":55
+               "min":55,
+               "decimal":14.916666666666666
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":14,
-               "min":57
+               "min":57,
+               "decimal":14.95
             },
             "app":"PokemonGo"
          },
          {
             "time":{
                "hrs":17,
-               "min":1
+               "min":1,
+               "decimal":17.016666666666666
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":17,
-               "min":17
+               "min":17,
+               "decimal":17.283333333333335
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":17,
-               "min":19
+               "min":19,
+               "decimal":17.316666666666666
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":17,
-               "min":24
+               "min":24,
+               "decimal":17.4
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":17,
-               "min":46
+               "min":46,
+               "decimal":17.766666666666666
             },
             "app":"Snapchat"
          },
          {
             "time":{
                "hrs":17,
-               "min":48
+               "min":48,
+               "decimal":17.8
             },
             "app":"Snapchat"
          },
          {
             "time":{
                "hrs":17,
-               "min":50
+               "min":50,
+               "decimal":17.833333333333332
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":17,
-               "min":52
+               "min":52,
+               "decimal":17.866666666666667
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":18,
-               "min":3
+               "min":3,
+               "decimal":18.05
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":18,
-               "min":35
+               "min":35,
+               "decimal":18.583333333333332
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":21,
-               "min":15
+               "min":15,
+               "decimal":21.25
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":21,
-               "min":35
+               "min":35,
+               "decimal":21.583333333333332
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":22,
-               "min":12
+               "min":12,
+               "decimal":22.2
             },
             "app":"9Gag"
          }
@@ -379,294 +431,336 @@
          {
             "time":{
                "hrs":7,
-               "min":30
+               "min":30,
+               "decimal":7.5
             },
             "app":"Alarm"
          },
          {
             "time":{
                "hrs":7,
-               "min":36
+               "min":36,
+               "decimal":7.6
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":7,
-               "min":42
+               "min":42,
+               "decimal":7.7
             },
             "app":"Snapchat"
          },
          {
             "time":{
                "hrs":7,
-               "min":44
+               "min":44,
+               "decimal":7.733333333333333
             },
             "app":"9Gag"
          },
          {
             "time":{
                "hrs":7,
-               "min":46
+               "min":46,
+               "decimal":7.766666666666667
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":7,
-               "min":47
+               "min":47,
+               "decimal":7.783333333333333
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":8,
-               "min":40
+               "min":40,
+               "decimal":8.666666666666666
             },
             "app":"Calendar"
          },
          {
             "time":{
                "hrs":8,
-               "min":57
+               "min":57,
+               "decimal":8.95
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":9,
-               "min":12
+               "min":12,
+               "decimal":9.2
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":9,
-               "min":17
+               "min":17,
+               "decimal":9.283333333333333
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":10,
-               "min":34
+               "min":34,
+               "decimal":10.566666666666666
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":10,
-               "min":44
+               "min":44,
+               "decimal":10.733333333333333
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":11,
-               "min":30
+               "min":30,
+               "decimal":11.5
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":11,
-               "min":53
+               "min":53,
+               "decimal":11.883333333333333
             },
             "app":"Gmail"
          },
          {
             "time":{
                "hrs":11,
-               "min":55
+               "min":55,
+               "decimal":11.916666666666666
             },
             "app":"Gmail"
          },
          {
             "time":{
                "hrs":12,
-               "min":10
+               "min":10,
+               "decimal":12.166666666666666
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":12,
-               "min":10
+               "min":10,
+               "decimal":12.166666666666666
             },
             "app":"Snapchat"
          },
          {
             "time":{
                "hrs":12,
-               "min":11
+               "min":11,
+               "decimal":12.183333333333334
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":12,
-               "min":15
+               "min":15,
+               "decimal":12.25
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":12,
-               "min":21
+               "min":21,
+               "decimal":12.35
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":12,
-               "min":25
+               "min":25,
+               "decimal":12.416666666666666
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":12,
-               "min":27
+               "min":27,
+               "decimal":12.45
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":12,
-               "min":53
+               "min":53,
+               "decimal":12.883333333333333
             },
             "app":"Gmail"
          },
          {
             "time":{
                "hrs":13,
-               "min":19
+               "min":19,
+               "decimal":13.316666666666666
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":13,
-               "min":25
+               "min":25,
+               "decimal":13.416666666666666
             },
             "app":"9Gag"
          },
          {
             "time":{
                "hrs":14,
-               "min":52
+               "min":52,
+               "decimal":14.866666666666667
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":14,
-               "min":55
+               "min":55,
+               "decimal":14.916666666666666
             },
             "app":"PokemonGo"
          },
          {
             "time":{
                "hrs":15,
-               "min":0
+               "min":0,
+               "decimal":15
             },
             "app":"Calendar"
          },
          {
             "time":{
                "hrs":16,
-               "min":46
+               "min":46,
+               "decimal":16.766666666666666
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":17,
-               "min":17
+               "min":17,
+               "decimal":17.283333333333335
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":17,
-               "min":19
+               "min":19,
+               "decimal":17.316666666666666
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":17,
-               "min":24
+               "min":24,
+               "decimal":17.4
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":17,
-               "min":58
+               "min":58,
+               "decimal":17.966666666666665
             },
             "app":"Maps"
          },
          {
             "time":{
                "hrs":18,
-               "min":3
+               "min":3,
+               "decimal":18.05
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":19,
-               "min":0
+               "min":0,
+               "decimal":19
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":19,
-               "min":13
+               "min":13,
+               "decimal":19.216666666666665
             },
             "app":"Snapchat"
          },
          {
             "time":{
                "hrs":19,
-               "min":20
+               "min":20,
+               "decimal":19.333333333333332
             },
             "app":"PokemonGo"
          },
          {
             "time":{
                "hrs":19,
-               "min":51
+               "min":51,
+               "decimal":19.85
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":21,
-               "min":15
+               "min":15,
+               "decimal":21.25
             },
             "app":"Snapchat"
          },
          {
             "time":{
                "hrs":21,
-               "min":26
+               "min":26,
+               "decimal":21.433333333333334
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":22,
-               "min":40
+               "min":40,
+               "decimal":22.666666666666668
             },
             "app":"Snapchat"
          },
          {
             "time":{
                "hrs":22,
-               "min":48
+               "min":48,
+               "decimal":22.8
             },
             "app":"9Gag"
          }
@@ -678,273 +772,312 @@
          {
             "time":{
                "hrs":8,
-               "min":0
+               "min":0,
+               "decimal":8
             },
             "app":"Alarm"
          },
          {
             "time":{
                "hrs":8,
-               "min":2
+               "min":2,
+               "decimal":8.033333333333333
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":8,
-               "min":14
+               "min":14,
+               "decimal":8.233333333333333
             },
             "app":"9Gag"
          },
          {
             "time":{
                "hrs":8,
-               "min":49
+               "min":49,
+               "decimal":8.816666666666666
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":9,
-               "min":4
+               "min":4,
+               "decimal":9.066666666666666
             },
             "app":"Calendar"
          },
          {
             "time":{
                "hrs":9,
-               "min":14
+               "min":14,
+               "decimal":9.233333333333333
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":9,
-               "min":14
+               "min":14,
+               "decimal":9.233333333333333
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":9,
-               "min":17
+               "min":17,
+               "decimal":9.283333333333333
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":10,
-               "min":34
+               "min":34,
+               "decimal":10.566666666666666
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":11,
-               "min":30
+               "min":30,
+               "decimal":11.5
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":11,
-               "min":53
+               "min":53,
+               "decimal":11.883333333333333
             },
             "app":"Gmail"
          },
          {
             "time":{
                "hrs":11,
-               "min":55
+               "min":55,
+               "decimal":11.916666666666666
             },
             "app":"Gmail"
          },
          {
             "time":{
                "hrs":12,
-               "min":10
+               "min":10,
+               "decimal":12.166666666666666
             },
             "app":"Snapchat"
          },
          {
             "time":{
                "hrs":12,
-               "min":10
+               "min":10,
+               "decimal":12.166666666666666
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":12,
-               "min":15
+               "min":15,
+               "decimal":12.25
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":12,
-               "min":33
+               "min":33,
+               "decimal":12.55
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":12,
-               "min":38
+               "min":38,
+               "decimal":12.633333333333333
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":12,
-               "min":54
+               "min":54,
+               "decimal":12.9
             },
             "app":"Snapchat"
          },
          {
             "time":{
                "hrs":13,
-               "min":12
+               "min":12,
+               "decimal":13.2
             },
             "app":"Snapchat"
          },
          {
             "time":{
                "hrs":13,
-               "min":47
+               "min":47,
+               "decimal":13.783333333333333
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":14,
-               "min":1
+               "min":1,
+               "decimal":14.016666666666667
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":15,
-               "min":6
+               "min":6,
+               "decimal":15.1
             },
             "app":"Calendar"
          },
          {
             "time":{
                "hrs":15,
-               "min":11
+               "min":11,
+               "decimal":15.183333333333334
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":15,
-               "min":20
+               "min":20,
+               "decimal":15.333333333333334
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":16,
-               "min":47
+               "min":47,
+               "decimal":16.783333333333335
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":17,
-               "min":1
+               "min":1,
+               "decimal":17.016666666666666
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":17,
-               "min":5
+               "min":5,
+               "decimal":17.083333333333332
             },
             "app":"Transit"
          },
          {
             "time":{
                "hrs":17,
-               "min":17
+               "min":17,
+               "decimal":17.283333333333335
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":17,
-               "min":19
+               "min":19,
+               "decimal":17.316666666666666
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":17,
-               "min":24
+               "min":24,
+               "decimal":17.4
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":17,
-               "min":45
+               "min":45,
+               "decimal":17.75
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":17,
-               "min":52
+               "min":52,
+               "decimal":17.866666666666667
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":17,
-               "min":58
+               "min":58,
+               "decimal":17.966666666666665
             },
             "app":"Maps"
          },
          {
             "time":{
                "hrs":18,
-               "min":3
+               "min":3,
+               "decimal":18.05
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":18,
-               "min":35
+               "min":35,
+               "decimal":18.583333333333332
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":21,
-               "min":15
+               "min":15,
+               "decimal":21.25
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":21,
-               "min":18
+               "min":18,
+               "decimal":21.3
             },
             "app":"Maps"
          },
          {
             "time":{
                "hrs":22,
-               "min":1
+               "min":1,
+               "decimal":22.016666666666666
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":22,
-               "min":5
+               "min":5,
+               "decimal":22.083333333333332
             },
             "app":"9Gag"
          }
@@ -956,329 +1089,376 @@
          {
             "time":{
                "hrs":7,
-               "min":30
+               "min":30,
+               "decimal":7.5
             },
             "app":"Alarm"
          },
          {
             "time":{
                "hrs":7,
-               "min":36
+               "min":36,
+               "decimal":7.6
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":7,
-               "min":46
+               "min":46,
+               "decimal":7.766666666666667
             },
             "app":"Snapchat"
          },
          {
             "time":{
                "hrs":7,
-               "min":47
+               "min":47,
+               "decimal":7.783333333333333
             },
             "app":"9Gag"
          },
          {
             "time":{
                "hrs":7,
-               "min":53
+               "min":53,
+               "decimal":7.883333333333333
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":7,
-               "min":57
+               "min":57,
+               "decimal":7.95
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":8,
-               "min":33
+               "min":33,
+               "decimal":8.55
             },
             "app":"Calendar"
          },
          {
             "time":{
                "hrs":8,
-               "min":43
+               "min":43,
+               "decimal":8.716666666666667
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":9,
-               "min":24
+               "min":24,
+               "decimal":9.4
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":9,
-               "min":34
+               "min":34,
+               "decimal":9.566666666666666
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":10,
-               "min":37
+               "min":37,
+               "decimal":10.616666666666667
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":10,
-               "min":54
+               "min":54,
+               "decimal":10.9
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":11,
-               "min":30
+               "min":30,
+               "decimal":11.5
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":11,
-               "min":53
+               "min":53,
+               "decimal":11.883333333333333
             },
             "app":"Gmail"
          },
          {
             "time":{
                "hrs":11,
-               "min":55
+               "min":55,
+               "decimal":11.916666666666666
             },
             "app":"Gmail"
          },
          {
             "time":{
                "hrs":12,
-               "min":10
+               "min":10,
+               "decimal":12.166666666666666
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":12,
-               "min":10
+               "min":10,
+               "decimal":12.166666666666666
             },
             "app":"Snapchat"
          },
          {
             "time":{
                "hrs":12,
-               "min":11
+               "min":11,
+               "decimal":12.183333333333334
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":12,
-               "min":15
+               "min":15,
+               "decimal":12.25
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":12,
-               "min":21
+               "min":21,
+               "decimal":12.35
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":12,
-               "min":25
+               "min":25,
+               "decimal":12.416666666666666
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":12,
-               "min":27
+               "min":27,
+               "decimal":12.45
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":12,
-               "min":29
+               "min":29,
+               "decimal":12.483333333333333
             },
             "app":"PokemonGo"
          },
          {
             "time":{
                "hrs":12,
-               "min":53
+               "min":53,
+               "decimal":12.883333333333333
             },
             "app":"Gmail"
          },
          {
             "time":{
                "hrs":13,
-               "min":19
+               "min":19,
+               "decimal":13.316666666666666
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":14,
-               "min":2
+               "min":2,
+               "decimal":14.033333333333333
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":14,
-               "min":14
+               "min":14,
+               "decimal":14.233333333333333
             },
             "app":"Snapchat"
          },
          {
             "time":{
                "hrs":15,
-               "min":20
+               "min":20,
+               "decimal":15.333333333333334
             },
             "app":"PokemonGo"
          },
          {
             "time":{
                "hrs":15,
-               "min":23
+               "min":23,
+               "decimal":15.383333333333333
             },
             "app":"PokemonGo"
          },
          {
             "time":{
                "hrs":15,
-               "min":29
+               "min":29,
+               "decimal":15.483333333333333
             },
             "app":"PokemonGo"
          },
          {
             "time":{
                "hrs":16,
-               "min":31
+               "min":31,
+               "decimal":16.516666666666666
             },
             "app":"Snapchat"
          },
          {
             "time":{
                "hrs":16,
-               "min":46
+               "min":46,
+               "decimal":16.766666666666666
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":17,
-               "min":1
+               "min":1,
+               "decimal":17.016666666666666
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":17,
-               "min":5
+               "min":5,
+               "decimal":17.083333333333332
             },
             "app":"9Gag"
          },
          {
             "time":{
                "hrs":17,
-               "min":17
+               "min":17,
+               "decimal":17.283333333333335
             },
             "app":"Snapchat"
          },
          {
             "time":{
                "hrs":17,
-               "min":19
+               "min":19,
+               "decimal":17.316666666666666
             },
             "app":"Snapchat"
          },
          {
             "time":{
                "hrs":17,
-               "min":52
+               "min":52,
+               "decimal":17.866666666666667
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":18,
-               "min":21
+               "min":21,
+               "decimal":18.35
             },
             "app":"Gmail"
          },
          {
             "time":{
                "hrs":19,
-               "min":13
+               "min":13,
+               "decimal":19.216666666666665
             },
             "app":"Snapchat"
          },
          {
             "time":{
                "hrs":19,
-               "min":36
+               "min":36,
+               "decimal":19.6
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":19,
-               "min":42
+               "min":42,
+               "decimal":19.7
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":20,
-               "min":7
+               "min":7,
+               "decimal":20.116666666666667
             },
             "app":"PokemonGo"
          },
          {
             "time":{
                "hrs":20,
-               "min":15
+               "min":15,
+               "decimal":20.25
             },
             "app":"PokemonGo"
          },
          {
             "time":{
                "hrs":20,
-               "min":42
+               "min":42,
+               "decimal":20.7
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":20,
-               "min":58
+               "min":58,
+               "decimal":20.966666666666665
             },
             "app":"9Gag"
          },
          {
             "time":{
                "hrs":21,
-               "min":35
+               "min":35,
+               "decimal":21.583333333333332
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":22,
-               "min":28
+               "min":28,
+               "decimal":22.466666666666665
             },
             "app":"9Gag"
          }
@@ -1290,301 +1470,344 @@
          {
             "time":{
                "hrs":8,
-               "min":0
+               "min":0,
+               "decimal":8
             },
             "app":"Alarm"
          },
          {
             "time":{
                "hrs":8,
-               "min":2
+               "min":2,
+               "decimal":8.033333333333333
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":8,
-               "min":12
+               "min":12,
+               "decimal":8.2
             },
             "app":"Snapchat"
          },
          {
             "time":{
                "hrs":8,
-               "min":51
+               "min":51,
+               "decimal":8.85
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":8,
-               "min":53
+               "min":53,
+               "decimal":8.883333333333333
             },
             "app":"9Gag"
          },
          {
             "time":{
                "hrs":9,
-               "min":20
+               "min":20,
+               "decimal":9.333333333333334
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":9,
-               "min":26
+               "min":26,
+               "decimal":9.433333333333334
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":10,
-               "min":23
+               "min":23,
+               "decimal":10.383333333333333
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":10,
-               "min":36
+               "min":36,
+               "decimal":10.6
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":11,
-               "min":26
+               "min":26,
+               "decimal":11.433333333333334
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":12,
-               "min":22
+               "min":22,
+               "decimal":12.366666666666667
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":12,
-               "min":34
+               "min":34,
+               "decimal":12.566666666666666
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":12,
-               "min":41
+               "min":41,
+               "decimal":12.683333333333334
             },
             "app":"Snapchat"
          },
          {
             "time":{
                "hrs":12,
-               "min":42
+               "min":42,
+               "decimal":12.7
             },
             "app":"9Gag"
          },
          {
             "time":{
                "hrs":13,
-               "min":0
+               "min":0,
+               "decimal":13
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":13,
-               "min":2
+               "min":2,
+               "decimal":13.033333333333333
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":13,
-               "min":31
+               "min":31,
+               "decimal":13.516666666666666
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":13,
-               "min":52
+               "min":52,
+               "decimal":13.866666666666667
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":14,
-               "min":10
+               "min":10,
+               "decimal":14.166666666666666
             },
             "app":"Snapchat"
          },
          {
             "time":{
                "hrs":14,
-               "min":52
+               "min":52,
+               "decimal":14.866666666666667
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":14,
-               "min":55
+               "min":55,
+               "decimal":14.916666666666666
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":15,
-               "min":3
+               "min":3,
+               "decimal":15.05
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":15,
-               "min":16
+               "min":16,
+               "decimal":15.266666666666667
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":15,
-               "min":20
+               "min":20,
+               "decimal":15.333333333333334
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":16,
-               "min":38
+               "min":38,
+               "decimal":16.633333333333333
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":16,
-               "min":41
+               "min":41,
+               "decimal":16.683333333333334
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":16,
-               "min":45
+               "min":45,
+               "decimal":16.75
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":16,
-               "min":52
+               "min":52,
+               "decimal":16.866666666666667
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":17,
-               "min":25
+               "min":25,
+               "decimal":17.416666666666668
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":17,
-               "min":28
+               "min":28,
+               "decimal":17.466666666666665
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":18,
-               "min":6
+               "min":6,
+               "decimal":18.1
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":18,
-               "min":17
+               "min":17,
+               "decimal":18.283333333333335
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":18,
-               "min":27
+               "min":27,
+               "decimal":18.45
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":18,
-               "min":58
+               "min":58,
+               "decimal":18.966666666666665
             },
             "app":"Snapchat"
          },
          {
             "time":{
                "hrs":19,
-               "min":7
+               "min":7,
+               "decimal":19.116666666666667
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":19,
-               "min":12
+               "min":12,
+               "decimal":19.2
             },
             "app":"Snapchat"
          },
          {
             "time":{
                "hrs":19,
-               "min":30
+               "min":30,
+               "decimal":19.5
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":19,
-               "min":52
+               "min":52,
+               "decimal":19.866666666666667
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":19,
-               "min":57
+               "min":57,
+               "decimal":19.95
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":20,
-               "min":2
+               "min":2,
+               "decimal":20.033333333333335
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":20,
-               "min":47
+               "min":47,
+               "decimal":20.783333333333335
             },
             "app":"9Gag"
          },
          {
             "time":{
                "hrs":22,
-               "min":16
+               "min":16,
+               "decimal":22.266666666666666
             },
             "app":"Snapchat"
          },
          {
             "time":{
                "hrs":22,
-               "min":30
+               "min":30,
+               "decimal":22.5
             },
             "app":"9Gag"
          }
@@ -1596,273 +1819,312 @@
          {
             "time":{
                "hrs":8,
-               "min":0
+               "min":0,
+               "decimal":8
             },
             "app":"Alarm"
          },
          {
             "time":{
                "hrs":8,
-               "min":30
+               "min":30,
+               "decimal":8.5
             },
             "app":"Calendar"
          },
          {
             "time":{
                "hrs":8,
-               "min":48
+               "min":48,
+               "decimal":8.8
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":8,
-               "min":54
+               "min":54,
+               "decimal":8.9
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":9,
-               "min":52
+               "min":52,
+               "decimal":9.866666666666667
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":10,
-               "min":2
+               "min":2,
+               "decimal":10.033333333333333
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":10,
-               "min":5
+               "min":5,
+               "decimal":10.083333333333334
             },
             "app":"PokemonGo"
          },
          {
             "time":{
                "hrs":10,
-               "min":13
+               "min":13,
+               "decimal":10.216666666666667
             },
             "app":"PokemonGo"
          },
          {
             "time":{
                "hrs":10,
-               "min":25
+               "min":25,
+               "decimal":10.416666666666666
             },
             "app":"PokemonGo"
          },
          {
             "time":{
                "hrs":10,
-               "min":38
+               "min":38,
+               "decimal":10.633333333333333
             },
             "app":"PokemonGo"
          },
          {
             "time":{
                "hrs":10,
-               "min":55
+               "min":55,
+               "decimal":10.916666666666666
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":11,
-               "min":57
+               "min":57,
+               "decimal":11.95
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":12,
-               "min":2
+               "min":2,
+               "decimal":12.033333333333333
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":12,
-               "min":40
+               "min":40,
+               "decimal":12.666666666666666
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":12,
-               "min":56
+               "min":56,
+               "decimal":12.933333333333334
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":13,
-               "min":55
+               "min":55,
+               "decimal":13.916666666666666
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":13,
-               "min":59
+               "min":59,
+               "decimal":13.983333333333333
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":15,
-               "min":12
+               "min":12,
+               "decimal":15.2
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":15,
-               "min":40
+               "min":40,
+               "decimal":15.666666666666666
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":15,
-               "min":53
+               "min":53,
+               "decimal":15.883333333333333
             },
             "app":"Clock"
          },
          {
             "time":{
                "hrs":16,
-               "min":12
+               "min":12,
+               "decimal":16.2
             },
             "app":"Transit"
          },
          {
             "time":{
                "hrs":16,
-               "min":17
+               "min":17,
+               "decimal":16.283333333333335
             },
             "app":"Transit"
          },
          {
             "time":{
                "hrs":16,
-               "min":25
+               "min":25,
+               "decimal":16.416666666666668
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":16,
-               "min":38
+               "min":38,
+               "decimal":16.633333333333333
             },
             "app":"Maps"
          },
          {
             "time":{
                "hrs":16,
-               "min":45
+               "min":45,
+               "decimal":16.75
             },
             "app":"Maps"
          },
          {
             "time":{
                "hrs":17,
-               "min":2
+               "min":2,
+               "decimal":17.033333333333335
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":17,
-               "min":12
+               "min":12,
+               "decimal":17.2
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":17,
-               "min":26
+               "min":26,
+               "decimal":17.433333333333334
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":17,
-               "min":39
+               "min":39,
+               "decimal":17.65
             },
             "app":"Snapchat"
          },
          {
             "time":{
                "hrs":18,
-               "min":46
+               "min":46,
+               "decimal":18.766666666666666
             },
             "app":"Maps"
          },
          {
             "time":{
                "hrs":19,
-               "min":2
+               "min":2,
+               "decimal":19.033333333333335
             },
             "app":"Snapchat"
          },
          {
             "time":{
                "hrs":20,
-               "min":10
+               "min":10,
+               "decimal":20.166666666666668
             },
             "app":"Maps"
          },
          {
             "time":{
                "hrs":20,
-               "min":17
+               "min":17,
+               "decimal":20.283333333333335
             },
             "app":"Transit"
          },
          {
             "time":{
                "hrs":21,
-               "min":26
+               "min":26,
+               "decimal":21.433333333333334
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":21,
-               "min":30
+               "min":30,
+               "decimal":21.5
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":21,
-               "min":33
+               "min":33,
+               "decimal":21.55
             },
             "app":"Whatsapp"
          },
          {
             "time":{
                "hrs":21,
-               "min":45
+               "min":45,
+               "decimal":21.75
             },
             "app":"PokemonGo"
          },
          {
             "time":{
                "hrs":21,
-               "min":57
+               "min":57,
+               "decimal":21.95
             },
             "app":"PokemonGo"
          },
          {
             "time":{
                "hrs":22,
-               "min":19
+               "min":19,
+               "decimal":22.316666666666666
             },
             "app":"PokemonGo"
          }
