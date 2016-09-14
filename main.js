@@ -1,6 +1,6 @@
 d3.json('data.json', (dataset) => {
 
-  let colorScale = d3.scaleOrdinal(d3.schemeCategory20);
+  let colorScale = d3.scaleOrdinal(d3.schemeCategory10);
 
   let data = d3.range(0, 2 * Math.PI, .01).map((t) => {
     return [t, Math.sin(2 * t) * Math.cos(2 * t)];
@@ -23,7 +23,6 @@ d3.json('data.json', (dataset) => {
     .attr("height", height)
 
   svg.selectAll("g").data(dataset).enter().each((dayData, i) => {
-    console.log(dayData);
 
     let xPos = i * 375 + 200;
     let g = svg.append("g").attr("transform", `translate(${i < 4 ? xPos : (i-3) * 375}, ${i < 4 ? 200 : 575})`);
@@ -38,23 +37,8 @@ d3.json('data.json', (dataset) => {
       .append("circle")
       .attr("r", radius);
 
-    let angleRange = {
-      a0: -270,
-      a1: 90
-    }
-    let offsetAngleRange = {
-      a0: angleRange.a0 + 30,
-      a1: angleRange.a1 + 30
-    }
-    let zippedAngleHour = (h0, h1) => {
-      return d3.zip(d3.range(offsetAngleRange.a0, offsetAngleRange.a1, 30), d3.range(h0, h1, 1).reverse())
-        .map(d => {
-          return {
-            a: d[0],
-            h: d[1]
-          }
-        });
-    }
+    let amScale = d3.scaleLinear().domain([0, 12]).range([-90, 270]);
+    let pmScale = d3.scaleLinear().domain([12, 24]).range([-90, 270]);
 
     let rotate = angle => "rotate(" + angle + ")";
     let rotateG = d => rotate(-d.a);
@@ -62,16 +46,9 @@ d3.json('data.json', (dataset) => {
     let amMarkersG = g.append("g")
       .attr("class", "am markers axis")
       .selectAll("g")
-      .data(zippedAngleHour(0, 12))
+      .data(d3.range(0, 12, 1))
       .enter().append("g")
-      .attr("transform", rotateG);
-
-    let pmMarkersG = g.append("g")
-      .attr("class", "pm markers axis")
-      .selectAll("g")
-      .data(zippedAngleHour(12, 24))
-      .enter().append("g")
-      .attr("transform", rotateG);
+      .attr("transform", d => "rotate(" + amScale(d) + ")");
 
     let amMarker = radius - 5;
     amMarkersG.append("line")
@@ -79,37 +56,43 @@ d3.json('data.json', (dataset) => {
       .attr("x1", radius)
       .attr("x2", amMarker);
 
+    let x1 = amMarker - radius * 0.5;
+    amMarkersG.append("text")
+      .attr("x", x1)
+      .attr("dy", ".35em")
+      .attr("text-anchor", "middle")
+      .attr("alignment-baseline", "middle")
+      .attr("transform", d => `rotate(${-1 * amScale(d)} ${x1} 0)` )
+      .text(d => d);
+
+    let pmMarkersG = g.append("g")
+      .attr("class", "pm markers axis")
+      .selectAll("g")
+      .data(d3.range(12, 24, 1))
+      .enter().append("g")
+      .attr("transform", d => "rotate(" + amScale(d) + ")");
+
     let pmMarker = radius + 5;
     pmMarkersG.append("line")
       .attr("stroke", "#555")
       .attr("x1", radius)
       .attr("x2", pmMarker);
 
-    let x1 = amMarker - radius * 0.5;
-    amMarkersG.append("text")
-      .attr("x", x1)
-      .attr("dy", ".35em")
-      .style("text-anchor", d => (d.a < 270 && d.a > 90 ? "end" : null))
-      .attr("transform", d => d.a < 270 && d.a > 90 ? "rotate(180 " + x1 + ", 0)" : null)
-      .text(d => d.h);
-
     let x2 = pmMarker + radius * 0.5;
     pmMarkersG.append("text")
       .attr("x", x2)
       .attr("dy", ".35em")
-      .style("text-anchor", d => (d.a < 270 && d.a > 90 ? "end" : null))
-      .attr("transform", d => d.a < 270 && d.a > 90 ? "rotate(180 " + x2 + ", 0)" : null)
-      .text(d => d.h);
+      .attr("text-anchor", "middle")
+      .attr("alignment-baseline", "middle")
+      .attr("transform", d => `rotate(${-1 * pmScale(d)} ${x2} 0)` )
+      .text(d => d);
 
     // Append data
     let amDatapoints = dayData.datapoints.filter( d => d.time.decimal < 12 );
-    let pmDatapoints = dayData.datapoints.filter( d => d.time.decimal > 12 );
+    let pmDatapoints = dayData.datapoints.filter( d => d.time.decimal >= 12 );
 
-    let amScale = d3.scaleLinear().domain([0, 12]).range([-90, 270])
-    let pmScale = d3.scaleLinear().domain([12, 24]).range([-90, 270])
-
-    let amAppLine = radius * 0.65;
-    let pmAppLine = radius * 1.35;
+    let amAppLine = radius * 0.6;
+    let pmAppLine = radius * 1.4;
 
     let transitionDuration = 350;
     let amAppsG = g.append("g")
@@ -119,12 +102,14 @@ d3.json('data.json', (dataset) => {
       .enter().append("g")
       .attr("transform", d => "rotate(" + amScale(d.time.decimal) + ")" )
       .attr("data-app-time", d => `${d.app} ${d.time.hrs}:${d.time.min}`)
-      .append("line")
+      .append("line").classed("app-line", true)
       .attr("x1", radius)
       .attr("x2", radius)
+      .on("mouseover", lineMouseOver)
+      .on("mouseout", lineMouseOut)
       .transition().duration(transitionDuration).delay( (d, i) => i * 50 )
       .attr("x2", amAppLine)
-      .attr("stroke-width", "1.5")
+      .attr("stroke-width", "2.5")
       .attr("stroke", d => colorScale(d.app));
 
     let pmAppsG = g.append("g")
@@ -134,13 +119,40 @@ d3.json('data.json', (dataset) => {
       .enter().append("g")
       .attr("transform", d => "rotate(" + pmScale(d.time.decimal) + ")" )
       .attr("data-app-time", d => `${d.app} ${d.time.hrs}:${d.time.min}`)
-      .append("line")
+      .append("line").classed("app-line", true)
       .attr("x1", radius)
       .attr("x2", radius)
+      .on("mouseover", lineMouseOver)
+      .on("mouseout", lineMouseOut)
       .transition().duration(transitionDuration).delay( (d, i) => (i + amDatapoints.length) * 50 )
       .attr("x2", pmAppLine)
-      .attr("stroke-width", "1.5")
+      .attr("stroke-width", "2.5")
       .attr("stroke", d => colorScale(d.app));
+
+      var animating = false;
+
+      function lineMouseOver(d, i) {
+        d3.selectAll("line.app-line")
+          .transition().duration(250)
+          .attr("opacity", d2 => d.app == d2.app ? "1" : "0.3")
+
+        d3.select(this)
+          .transition(`in-${i}`).duration(300)
+          .attr("x2", d.time.decimal < 12 ? amAppLine * 0.9 : pmAppLine * 1.1)
+          .attr("stroke-width", "5")
+      }
+
+      function lineMouseOut(d, i) {
+        d3.selectAll("line.app-line")
+          .transition().duration(250)
+          .attr("opacity", "1")
+
+        d3.select(this)
+          .transition(`out-${i}`).duration(300)
+          .attr("x2", d.time.decimal < 12 ? amAppLine : pmAppLine)
+          .attr("stroke-width", "2.5")
+      }
+
   })
 
 });

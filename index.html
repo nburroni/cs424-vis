@@ -9,6 +9,10 @@
 <script src="main.js"></script>
 <style>
 
+body.pointer-lock {
+  pointer-events: none;
+}
+
 .frame {
   fill: none;
   stroke: #000;
@@ -16,6 +20,7 @@
 
 .axis text {
   font: 12px sans-serif;
+  pointer-events: none;
 }
 
 .axis line,
