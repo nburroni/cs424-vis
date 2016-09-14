@@ -106,8 +106,8 @@ d3.json('data.json', (dataset) => {
       .text(d => d.h);
 
     // Append data
-    let amScale = d3.scaleLinear().domain([0, 12]).range([angleRange.a0, angleRange.a1])
-    let pmScale = d3.scaleLinear().domain([12, 24]).range([angleRange.a0, angleRange.a1])
+    let amScale = d3.scaleLinear().domain([0, 12]).range([-90, 270])
+    let pmScale = d3.scaleLinear().domain([12, 24]).range([-90, 270])
 
     let amAppLine = radius * 0.65;
     let pmAppLine = radius * 1.35;
@@ -117,7 +117,7 @@ d3.json('data.json', (dataset) => {
       .selectAll("g")
       .data(dayData.datapoints.filter( d => d.time.decimal < 12 ))
       .enter().append("g")
-      .attr("transform", d => rotate(amScale(d.time.decimal)) )
+      .attr("transform", d => "rotate(" + amScale(d.time.decimal) + ")" )
       .attr("data-app-time", d => `${d.app} ${d.time.hrs}:${d.time.min}`)
       .append("line")
       .attr("x1", radius)
@@ -130,7 +130,7 @@ d3.json('data.json', (dataset) => {
       .selectAll("g")
       .data(dayData.datapoints.filter( d => d.time.decimal > 12 ))
       .enter().append("g")
-      .attr("transform", d => rotate(pmScale(d.time.decimal)) )
+      .attr("transform", d => "rotate(" + pmScale(d.time.decimal) + ")" )
       .attr("data-app-time", d => `${d.app} ${d.time.hrs}:${d.time.min}`)
       .append("line")
       .attr("x1", radius)
