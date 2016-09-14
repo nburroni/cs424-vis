@@ -85,16 +85,12 @@ d3.json('data.json', (dataset) => {
       .attr("x1", radius)
       .attr("x2", pmMarker);
 
-    let rotation = (d, x) => {
-      return d.a < 270 && d.a > 90 ? "rotate(180 " + x + ", 0)" : null;
-    }
-
     let x1 = amMarker - radius * 0.5;
     amMarkersG.append("text")
       .attr("x", x1)
       .attr("dy", ".35em")
       .style("text-anchor", d => (d.a < 270 && d.a > 90 ? "end" : null))
-      .attr("transform", d => rotation(d, x1))
+      .attr("transform", d => d.a < 270 && d.a > 90 ? "rotate(180 " + x1 + ", 0)" : null)
       .text(d => d.h);
 
     let x2 = pmMarker + radius * 0.5;
@@ -102,25 +98,31 @@ d3.json('data.json', (dataset) => {
       .attr("x", x2)
       .attr("dy", ".35em")
       .style("text-anchor", d => (d.a < 270 && d.a > 90 ? "end" : null))
-      .attr("transform", d => rotation(d, x2))
+      .attr("transform", d => d.a < 270 && d.a > 90 ? "rotate(180 " + x2 + ", 0)" : null)
       .text(d => d.h);
 
     // Append data
+    let amDatapoints = dayData.datapoints.filter( d => d.time.decimal < 12 );
+    let pmDatapoints = dayData.datapoints.filter( d => d.time.decimal > 12 );
+
     let amScale = d3.scaleLinear().domain([0, 12]).range([-90, 270])
     let pmScale = d3.scaleLinear().domain([12, 24]).range([-90, 270])
 
     let amAppLine = radius * 0.65;
     let pmAppLine = radius * 1.35;
 
+    let transitionDuration = 350;
     let amAppsG = g.append("g")
       .attr("class", "am apps axis")
       .selectAll("g")
-      .data(dayData.datapoints.filter( d => d.time.decimal < 12 ))
+      .data(amDatapoints)
       .enter().append("g")
       .attr("transform", d => "rotate(" + amScale(d.time.decimal) + ")" )
       .attr("data-app-time", d => `${d.app} ${d.time.hrs}:${d.time.min}`)
       .append("line")
       .attr("x1", radius)
+      .attr("x2", radius)
+      .transition().duration(transitionDuration).delay( (d, i) => i * 50 )
       .attr("x2", amAppLine)
       .attr("stroke-width", "1.5")
       .attr("stroke", d => colorScale(d.app));
@@ -128,12 +130,14 @@ d3.json('data.json', (dataset) => {
     let pmAppsG = g.append("g")
       .attr("class", "pm apps axis")
       .selectAll("g")
-      .data(dayData.datapoints.filter( d => d.time.decimal > 12 ))
+      .data(pmDatapoints)
       .enter().append("g")
       .attr("transform", d => "rotate(" + pmScale(d.time.decimal) + ")" )
       .attr("data-app-time", d => `${d.app} ${d.time.hrs}:${d.time.min}`)
       .append("line")
       .attr("x1", radius)
+      .attr("x2", radius)
+      .transition().duration(transitionDuration).delay( (d, i) => (i + amDatapoints.length) * 50 )
       .attr("x2", pmAppLine)
       .attr("stroke-width", "1.5")
       .attr("stroke", d => colorScale(d.app));
