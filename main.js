@@ -22,6 +22,7 @@ d3.json('data.json', (dataset) => {
     .attr("width", width)
     .attr("height", height)
 
+
   svg.selectAll("g").data(dataset).enter().each((dayData, i) => {
 
     let xPos = i * 375 + 200;
@@ -106,6 +107,7 @@ d3.json('data.json', (dataset) => {
       .attr("x1", radius)
       .attr("x2", radius)
       .on("mouseover", lineMouseOver)
+      .on("mousemove", lineMouseMove)
       .on("mouseout", lineMouseOut)
       .transition().duration(transitionDuration).delay( (d, i) => i * 50 )
       .attr("x2", amAppLine)
@@ -123,6 +125,7 @@ d3.json('data.json', (dataset) => {
       .attr("x1", radius)
       .attr("x2", radius)
       .on("mouseover", lineMouseOver)
+      .on("mousemove", lineMouseMove)
       .on("mouseout", lineMouseOut)
       .transition().duration(transitionDuration).delay( (d, i) => (i + amDatapoints.length) * 50 )
       .attr("x2", pmAppLine)
@@ -140,6 +143,20 @@ d3.json('data.json', (dataset) => {
           .transition(`in-${i}`).duration(300)
           .attr("x2", d.time.decimal < 12 ? amAppLine * 0.9 : pmAppLine * 1.1)
           .attr("stroke-width", "5")
+
+        tooltip.classed("hidden", false)
+          .text(`${d.time.hrs}:${('0' + d.time.min).slice(-2)} - ${d.app}`)
+          .attr("x", event.pageX)
+          .attr("y", event.pageY - 40)
+          .attr("opacity", "0")
+          .transition("tooltip-opacity").duration(250)
+          .attr("opacity", "1");
+      }
+
+      function lineMouseMove(d, i) {
+        tooltip
+          .attr("x", event.pageX)
+          .attr("y", event.pageY - 40);
       }
 
       function lineMouseOut(d, i) {
@@ -151,8 +168,34 @@ d3.json('data.json', (dataset) => {
           .transition(`out-${i}`).duration(300)
           .attr("x2", d.time.decimal < 12 ? amAppLine : pmAppLine)
           .attr("stroke-width", "2.5")
+
+        tooltip
+          .transition("tooltip-opacity").duration(200)
+          .on("end", hideSelf)
+          .attr("opacity", "0");
+
+        function hideSelf() {
+          d3.select(this).classed("hidden", true);
+        }
       }
 
+      const filter = svg.append("defs")
+        .append("filter")
+          .attr("x", "0")
+          .attr("y", "0")
+          .attr("width", "1")
+          .attr("height", "1")
+          .attr("id", "solid")
+      filter.append("feFlood").attr("flood-color", "rgba(255, 255, 255, 0.5)")
+      filter.append("feComposite").attr("in", "SourceGraphic")
+
+      const tooltip = svg.append("text")
+        .classed("hidden", true)
+        .attr("text-anchor", "middle")
+        .attr("alignment-baseline", "middle")
+        .attr("font-family", "sans-serif")
+        .attr("font-size", "20px")
+        .attr("filter", "url(#solid)");
   })
 
 });
