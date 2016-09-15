@@ -13,6 +13,23 @@ body.pointer-lock {
   pointer-events: none;
 }
 
+.refs > div {
+  display: inline-block;
+}
+
+.refs .color-ref {
+  width: 50px;
+  height: 25px;
+  margin-left: 15px;
+}
+
+.refs .text-ref {
+  margin-left: 5px;
+  font-family: sans-serif;
+  vertical-align: super;
+  user-select: none;
+}
+
 .hidden {
   display: none;
 }
@@ -22,9 +39,12 @@ body.pointer-lock {
   stroke: #000;
 }
 
+text {
+  pointer-events: none;
+}
+
 .axis text {
   font: 12px sans-serif;
-  pointer-events: none;
 }
 
 .axis line,

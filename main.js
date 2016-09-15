@@ -1,5 +1,5 @@
 d3.json('data.json', (dataset) => {
-
+  let appNames = ["Whatsapp", "Clock", "Maps", "PokemonGo", "9Gag", "Transit", "Snapchat", "Alarm", "Calendar", "Gmail"];
   let colorScale = d3.scaleOrdinal(d3.schemeCategory10);
 
   let data = d3.range(0, 2 * Math.PI, .01).map((t) => {
@@ -8,7 +8,8 @@ d3.json('data.json', (dataset) => {
 
   let width = 1800,
     height = 2000,
-    radius = 100;
+    radius = 100,
+    pad = 200;
 
   let r = d3.scaleLinear()
     .domain([0, .5])
@@ -18,15 +19,29 @@ d3.json('data.json', (dataset) => {
     .radius(d => r(d[1]))
     .angle(d => (-d[0] + Math.PI / 2));
 
+  let references = d3.select("body").append("div").classed("refs", true)
+  references.selectAll().data(appNames).enter().each( (d, i) => {
+    references.append("div")
+      .classed("color-ref", true)
+      .style("background-color", colorScale(d))
+      .on("mouseover", () => hideAppLines(d))
+      .on("mouseout", () => showAppLines());
+
+    references.append("div")
+      .text(d)
+      .classed("text-ref", true)
+      .on("mouseover", () => hideAppLines(d))
+      .on("mouseout", () => showAppLines());
+  })
+
   let svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height)
 
+  svg.selectAll("g.clock").data(dataset).enter().each((dayData, i) => {
 
-  svg.selectAll("g").data(dataset).enter().each((dayData, i) => {
-
-    let xPos = i * 375 + 200;
-    let g = svg.append("g").attr("transform", `translate(${i < 4 ? xPos : (i-3) * 375}, ${i < 4 ? 200 : 575})`);
+    let xPos = i * 375 + pad;
+    let g = svg.append("g").attr("transform", `translate(${i < 4 ? xPos : (i-3) * 375}, ${i < 4 ? pad : pad + 375})`);
 
     g.append("text").text(dayData.day.substring(0, 3))
       .attr("text-anchor", "middle")
@@ -135,9 +150,7 @@ d3.json('data.json', (dataset) => {
       var animating = false;
 
       function lineMouseOver(d, i) {
-        d3.selectAll("line.app-line")
-          .transition().duration(250)
-          .attr("opacity", d2 => d.app == d2.app ? "1" : "0.3")
+        hideAppLines(d.app);
 
         d3.select(this)
           .transition(`in-${i}`).duration(300)
@@ -147,7 +160,7 @@ d3.json('data.json', (dataset) => {
         tooltip.classed("hidden", false)
           .text(`${d.time.hrs}:${('0' + d.time.min).slice(-2)} - ${d.app}`)
           .attr("x", event.pageX)
-          .attr("y", event.pageY - 40)
+          .attr("y", event.pageY - 75)
           .attr("opacity", "0")
           .transition("tooltip-opacity").duration(250)
           .attr("opacity", "1");
@@ -156,13 +169,11 @@ d3.json('data.json', (dataset) => {
       function lineMouseMove(d, i) {
         tooltip
           .attr("x", event.pageX)
-          .attr("y", event.pageY - 40);
+          .attr("y", event.pageY - 75);
       }
 
       function lineMouseOut(d, i) {
-        d3.selectAll("line.app-line")
-          .transition().duration(250)
-          .attr("opacity", "1")
+        showAppLines();
 
         d3.select(this)
           .transition(`out-${i}`).duration(300)
@@ -197,5 +208,17 @@ d3.json('data.json', (dataset) => {
         .attr("font-size", "20px")
         .attr("filter", "url(#solid)");
   })
+
+  function hideAppLines(app) {
+    d3.selectAll("line.app-line")
+      .transition().duration(250)
+      .attr("opacity", d2 => app == d2.app ? "1" : "0.3")
+  }
+
+  function showAppLines() {
+    d3.selectAll("line.app-line")
+      .transition().duration(250)
+      .attr("opacity", "1")
+  }
 
 });
