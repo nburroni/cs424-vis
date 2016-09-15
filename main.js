@@ -7,7 +7,7 @@ d3.json('data.json', (dataset) => {
   });
 
   let width = 1800,
-    height = 2000,
+    height = 1000,
     radius = 100,
     pad = 200;
 
